@@ -4,17 +4,37 @@
 
 import math
 
+def square_root(a):
+    try:
+        if a < 0:
+            raise ValueError("Cannot take square root of a negative number")
+
+        return math.sqrt(a)
+    except ValueError:
+        raise ValueError("Invalid square root argument")
+
+
+def hypotenuse(a, b):
+    try:
+        return math.hypot(a, b)
+    except (ValueError, TypeError):
+        raise ValueError("Invalid hypotenuse arguments")
+
 def add(a, b):
     return a + b
+
 def sub(a, b):
     return a-b
+
 def mul(a, b):
     return a * b
+
 def div(a, b):
     if a == 0:
         raise ZeroDivisionError()
     else:
         return b / a
+
 def log(a, b):
 
     if b < 0:
