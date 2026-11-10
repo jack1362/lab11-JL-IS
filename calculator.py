@@ -1,6 +1,6 @@
 #https://github.com/jack1362/lab11-JL-IS.git
 #Partner 1: Jack Lenhart
-#Partner 2: ishan sujin
+#Partner 2: Ishan Sujin
 import math
 # First example
 def add(a, b):
