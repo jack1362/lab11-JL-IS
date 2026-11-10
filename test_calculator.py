@@ -30,6 +30,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(div(-2, 10), -5)
         self.assertEqual(div(1, 1), 1)
 
+    def test_divide_by_zero(self):
         with self.assertRaises(ZeroDivisionError):
             div(0, 10)
 
